@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=devide-width, initial-scale=1">
+        <title>Mon Portefolio personnel</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-left">
+                <h2>AMAH-TCHOUTCHOUI Marielle</h2>
+            </div>
+
+            <div class="header-right">
+                <nav>
+                    <ul class="menu"></ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">A propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+        
+        <div id="container">
+            <div id="accueil">
+                <div class="presentation_text">
+                <p>Je suis <span>Marielle</span>, développeur en devenir </p>
+                <p>En découverte de la création de sites web et de l'infographie.</p>
+              <button onclick="document.getElementById('projets').scrollIntoView({ behavior: 'smooth' });">
+                 Voir mes projets
+                </button>
+                </div>
+            
+                <div class="presentation_image" id="presentation_image">
+                <img src="C:\Users\EliteBook\OneDrive\Images\web.jpeg" width="300" heigth="300">
+                </div>
+             </div>
+        
+            </section>
+            <section>
+            
+            
+             <div id="apropos">
+                <h2><span>A Propos</span></h2>
+                <div class="about_content">
+                    <div class="about_text">
+                        <p>Je me nomme <strong>Marielle AMAH-TCHOUTCHOUI,</strong> titulaire d’un diplôme de Technicien Supérieur en Biologie Appliquée et d’une Licence
+                        Professionnelle Qualité Hygiène Sécurité Environnement. Je suis une jeune femme
+                        passionnée par la biologie, dévouée à la qualité et engagée pour la santé et la sécurité des
+                        personnes et des biens. Je maitrise différentes techniques de diagnostic en laboratoire et 
+                        j’ai une bonne connaissances des normes réglementaires en entreprise.</p>
+                        <p>Dans le but d'élargir mon répertoire de "hard skills", je me forme également en développement web,
+                        à l'entreprenariat numérique et la littératie financière.</p>    
+                        <button class="submit-btn">Télécharger mon CV</button> 
+                    </div>   
+            
+                    <div class="about_image" id="presentation_image">
+                        <img src="c:\Users\EliteBook\OneDrive\Images\moi.jpg" width="200" height="200" name="moi">
+                    </div>
+                </div>
+             </div>
+            
+
+            </section>
+            <section>
+            
+            <div id="projets">
+            <h2><span>Mes Projets</span></h2>
+               <div class="mesprojets">
+                <div class="projets_item ">
+                    <p class="description">Création d'un site web axé sur la santé</p>
+                    <p class="competences">#HTML, #CSS, #JS</p>
+                    <button class="submit-btn">Voir le projet</button>
+                </div>
+                 
+                <div class="projets_item">
+                    <p class="description">Recherches dans la production de vaccins</p>
+                    <p class="competences">#Techniques de laboratoire, #controle qualité</p>
+                    <button class="submit-btn">Voir le projet</button>
+                </div>
+
+                <div class="projets_item">
+                    <p class="description">Création d'une ligne de couture</p>
+                    <p class="competences">#Gestion de projets, #management de la qualité, #Communication</p>
+                    <button class="submit-btn">Voir le projet</button>
+                </div>
+               </div>
+            </div>
+
+        </section>
+        <section>
+
+           
+            <div id="competences" >
+             <h2><span>Mes compétences</span></h2>
+              <div class="competences_container">
+                <div class="skills">
+        
+                <h3>Hards skills</h3>
+                <label>HTML</label>
+                <progress value="70" max="100" class="barre"></progress>
+
+                <label>CSS</label>
+                <progress value="50" max="100" class="barre"></progress>
+
+                <label>JS</label>
+                <progress value="30" max="100" class="barre"></progress>
+                </div>
+
+                <div class="skills">    
+                <h3>Soft skills</h3>
+                <label>Créativité</label>
+                <progress value="80" max="100" class="barre"></progress>
+
+                <label>Communication</label>
+                <progress value="30" max="100" class="barre"></progress>
+
+                <label>Autonomie</label>
+                <progress value="60" max="100" class="barre"></progress>
+                </div>
+
+              </div>
+            </div>
+ 
+        </section>
+        <section class="fin">
+
+            <div id="contact">
+            <h2>Vous avez un projet pour moi ou <span>une idée de collaboration ?</span>
+                N'hesitez pas à me <span>contacter</span>!
+                <form class="contact-form" name="contactform">
+                    <div class="form-group half-width">
+                        <label form="prenom">Prénom</label>
+                        <input type="text" name="prenom" id="prenom" >
+                    </div>
+                    
+                    <div class="form-group half-width">
+                        <label form="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" >
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label form="projet">Votre projet</label>
+                        <input type="text" name="projet" id="projet" >
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label form="message">Message</label>
+                        <textarea name="message" id="message">
+                    </textarea>
+                    </div>
+                    <button type="submit-btn">Envoyer</button>
+                </form>
+            </h2>
+            </div>
+
+        </div>
+
+    </section>
+
+
+        <footer>
+            <div class="footer-left">
+            <h2>Designed by Marielle with HTML, CSS, JS</h2>
+            </div>
+
+            <div class="footer-right">
+                <h2>Tous droits réservés - 2025</h2>
+            </div>
+
+        </footer>
+            
+    <script src="script.js">
+      
+    </script>
+    </body>
+</html>
